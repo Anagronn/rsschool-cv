@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
   const telegramIcon = document.querySelector('.contacts__contact-telegram');
   const githubIcon = document.querySelector('.contacts__contact-github');
@@ -10,17 +9,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function alternateOpacity() {
     setTimeout(() => {
-      // Telegram -> GitHub
       telegramIcon.style.opacity = 0;
       githubIcon.style.opacity = 1;
 
       setTimeout(() => {
-        // GitHub -> Instagram
         githubIcon.style.opacity = 0;
         instagramIcon.style.opacity = 1;
 
         setTimeout(() => {
-          // Instagram -> Telegram 
           instagramIcon.style.opacity = 0;
           telegramIcon.style.opacity = 1;
           alternateOpacity();
@@ -34,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   const leaves = document.querySelectorAll('g[transform]');
   leaves.forEach((leaf, index) => {
-    leaf.style.animationDelay = `${index}s`;
+    leaf.style.animationDelay = (index === 0) ? `${2}s` : `${2 + index}s`;
   });
 });
 
@@ -67,4 +63,56 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const blockPhoto = document.querySelector('.magnifier');
+  const modal = document.querySelector('.modal');
+  const closeBtn = document.querySelector('.modal__close-btn');
 
+  blockPhoto.addEventListener('click', function () {
+    modal.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', function () {
+    modal.classList.remove('active');
+  });
+
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+    }
+  });
+
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const arrowBtn = document.querySelector('.arrow');
+  const tree = document.querySelector('.tree');
+  const treeSpan = document.querySelector('.tree__span');
+
+  const treeItemLanguages = document.getElementById('languages');
+  const treeLanguages = document.querySelector('.tree__languages');
+
+  arrowBtn.addEventListener('click', function () {
+    arrowBtn.classList.toggle('active');
+    tree.classList.toggle('active');
+  });
+
+  treeSpan.addEventListener('click', function () {
+    treeItemLanguages.classList.toggle('active');
+    treeLanguages.classList.toggle('active');
+  });
+
+});
+
+window.onload = function () {
+  setTimeout(function () {
+    document.body.style.display = 'block';
+  }, 300);
+
+  setTimeout(function () {
+    const wrapper = document.querySelector('.wrapper');
+    wrapper.style.opacity = '1';
+  }, 1500);
+}

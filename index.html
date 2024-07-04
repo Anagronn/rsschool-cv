@@ -5,10 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>CV - RSSCHOOL</title>
 </head>
 
 <body>
+  <div class="modal">
+    <div class="modal__window">
+      <svg class="modal__close-btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="25" cy="25" r="18.75" fill="#BFAE9F" fill-opacity="0.55" />
+        <path d="M33.3333 16.6667L16.6667 33.3333" stroke="#2C4001" stroke-width="1.2" stroke-linecap="square"
+          stroke-linejoin="round" />
+        <path d="M16.6667 16.6667L33.3333 33.3333" stroke="#2C4001" stroke-width="1.2" stroke-linecap="square"
+          stroke-linejoin="round" />
+      </svg>
+
+      <img src="./assets/pics/avatar.png" alt="My photo" class="modal__image">
+    </div>
+  </div>
   <div class="wrapper">
     <header>
       <div class="header-container">
@@ -28,7 +42,8 @@
       <div class="about">
         <div class="container-me">
           <div class="magnifier">
-            <svg class="magnifier__icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="magnifier__icon" width="44" height="44" viewBox="0 0 44 44" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <circle cx="20.1666" cy="20.1667" r="12.8333" stroke="#FFF" stroke-width="2" />
               <path
                 d="M20.1667 14.6667C19.4444 14.6667 18.7292 14.8089 18.0619 15.0853C17.3946 15.3617 16.7883 15.7669 16.2776 16.2776C15.7669 16.7883 15.3618 17.3946 15.0853 18.0619C14.8089 18.7292 14.6667 19.4444 14.6667 20.1667"
@@ -42,21 +57,26 @@
 
         <div class="summary" id="about">
           <h2 class="summary__heading">Summary</h2>
-          <p class="summary__paragraph">I started learning programming with C and C++ at the uni, and then I studied a
-            bit
-            of machine learning with Python and object-oriented programming in Java. From this semester, at the
-            university, I switched to JavaScript and now have desire to develop in the area of frontend development.
-
+          <p class="summary__paragraph">
+            <strong>I am a junior frontend developer</strong>. I started my programming journey with C and C++ at
+            university in <strong>2021</strong>. In
+            <strong> 2022</strong>, I got acquainted with object-oriented programming in Java and machine learning in
+            Python. <br>
+            <br>
+            In November <strong>2023</strong>, I started taking the <strong>RS School JavaScript/Front-end
+              course</strong>, which
+            inspired me to pursue a career in frontend development.
+            <br>
+            <br>
+            In the RSS course, I plan to deepen my knowledge of frontend development and study modern technologies and
+            practices. My short-term goal is to obtain a position as a frontend developer in an innovative company where
+            I can apply and expand my knowledge. In the long term, I aspire to become a versatile developer capable of
+            working with various technologies and solving complex problems.
+            <br>
+            <br>
             I am ready to devote a large amount of time to learning and solving a wide range of problems; I quickly
-            absorb
-            information and wisely treat failures.I started learning programming with C and C++ at the uni, and then I
-            studied a bit
-            of machine learning with Python and object-oriented programming in Java. From this semester, at the
-            university, I switched to JavaScript and now have desire to develop in the area of frontend development.
-
-            I am ready to devote a large amount of time to learning and solving a wide range of problems; I quickly
-            absorb
-            information and wisely treat failures.</p>
+            absorb information and wisely treat failures.
+          </p>
         </div>
 
         <div class="contacts" id="contacts">
@@ -70,7 +90,8 @@
                   d="M44.1196 66.4256C41.1196 66.4256 38.3639 65.8915 35.8526 64.8233C33.3412 63.7665 31.1651 62.2779 29.3242 60.3574C27.4833 58.437 26.0628 56.1699 25.0628 53.5563C24.0628 50.9426 23.5628 48.079 23.5628 44.9654C23.5628 41.8745 24.0628 39.0279 25.0628 36.4256C26.0742 33.8233 27.4946 31.5676 29.3242 29.6586C31.1651 27.7381 33.3298 26.2495 35.8185 25.1926C38.3071 24.1358 41.023 23.6074 43.9662 23.6074C46.8753 23.6074 49.5344 24.1529 51.9435 25.2438C54.3639 26.3233 56.4548 27.812 58.2162 29.7097C59.9889 31.5961 61.3526 33.7722 62.3071 36.2381C63.273 38.6926 63.756 41.3006 63.756 44.062C63.756 45.6415 63.5912 47.1529 63.2617 48.5961C62.9435 50.0392 62.4492 51.3233 61.7787 52.4483C61.1196 53.5733 60.273 54.4597 59.2389 55.1074C58.2162 55.7551 56.9946 56.079 55.5742 56.079C54.7105 56.079 53.9378 55.9256 53.256 55.6188C52.5742 55.312 52.0344 54.8063 51.6367 54.1017C51.2389 53.3972 51.0173 52.4483 50.9719 51.2551H50.8014C50.3469 52.2324 49.7389 53.1074 48.9776 53.8801C48.2276 54.6529 47.3469 55.2608 46.3355 55.704C45.3242 56.1358 44.1992 56.3461 42.9605 56.3347C41.5742 56.312 40.3014 56.0051 39.1423 55.4142C37.9833 54.8233 36.9833 54.0108 36.1423 52.9767C35.3128 51.9313 34.6651 50.7211 34.1992 49.3461C33.7446 47.9597 33.5173 46.4767 33.5173 44.8972C33.5173 43.3404 33.756 41.8972 34.2333 40.5676C34.7219 39.2267 35.3923 38.0506 36.2446 37.0392C37.1083 36.0279 38.1139 35.2324 39.2617 34.6529C40.4094 34.0733 41.6423 33.7608 42.9605 33.7154C44.1423 33.6813 45.2446 33.8631 46.2673 34.2608C47.2901 34.6472 48.1878 35.1983 48.9605 35.9142C49.7333 36.6301 50.3242 37.4597 50.7333 38.4029H50.9037V34.1245H52.8298V50.3006C52.8298 51.7324 53.0344 52.7551 53.4435 53.3688C53.8639 53.9824 54.5855 54.2892 55.6083 54.2892C56.9151 54.2892 58.0344 53.8745 58.9662 53.0449C59.898 52.2154 60.6083 51.0336 61.0969 49.4995C61.5969 47.9654 61.8469 46.1415 61.8469 44.0279C61.8469 42.0279 61.5628 40.1017 60.9946 38.2495C60.4378 36.3972 59.631 34.6926 58.5742 33.1358C57.5287 31.579 56.2673 30.2211 54.7901 29.062C53.3128 27.9029 51.6537 27.0051 49.8128 26.3688C47.9833 25.7211 46.0117 25.3972 43.898 25.3972C41.2617 25.3972 38.8242 25.8858 36.5855 26.8631C34.3583 27.8404 32.4151 29.2097 30.756 30.9711C29.1083 32.7324 27.8242 34.8063 26.9037 37.1926C25.9946 39.579 25.5401 42.187 25.5401 45.0165C25.5401 47.8461 25.9946 50.4597 26.9037 52.8574C27.8242 55.2438 29.1139 57.312 30.773 59.062C32.4435 60.8233 34.4151 62.187 36.6878 63.1529C38.9605 64.1188 41.4548 64.6017 44.1708 64.6017C45.4208 64.6017 46.648 64.4767 47.8526 64.2267C49.0571 63.9767 50.1878 63.6358 51.2446 63.204C52.3014 62.7836 53.2389 62.312 54.0571 61.7892L54.8242 63.4256C53.8696 64.0392 52.8014 64.5676 51.6196 65.0108C50.4492 65.4654 49.2219 65.812 47.9378 66.0506C46.6651 66.3006 45.3923 66.4256 44.1196 66.4256ZM43.148 54.4426C44.7048 54.4426 46.0685 54.0392 47.2389 53.2324C48.4094 52.4142 49.3242 51.2836 49.9833 49.8404C50.6423 48.3972 50.9719 46.7267 50.9719 44.829C50.9719 42.9313 50.6367 41.2892 49.9662 39.9029C49.2958 38.5165 48.3753 37.4483 47.2048 36.6983C46.0344 35.937 44.6992 35.5563 43.1992 35.5563C41.7219 35.5563 40.3923 35.9767 39.2105 36.8176C38.0401 37.6586 37.1139 38.7836 36.4321 40.1926C35.7617 41.5904 35.4264 43.1358 35.4264 44.829C35.4264 46.5676 35.7503 48.1699 36.398 49.6358C37.0458 51.0904 37.9492 52.2551 39.1083 53.1301C40.2673 54.0051 41.6139 54.4426 43.148 54.4426Z"
                   fill="#2C4001" />
               </svg>
-              <p class="contacts__contact-email">nastasya.vodchits@mail.ru</p>
+              <p class="contacts__contact-email"><a
+                  href="mailto:nastasya.vodchits@mail.ru">nastasya.vodchits@mail.ru</a></p>
             </div>
 
             <div class="contacts__contact contacts__contact_changing">
@@ -109,27 +130,32 @@
             </div>
           </div>
 
-          <ul class="contacts__other">
-            <li class="contacts__location">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.5 21.5L12.5 6.5M21.5 4.5L2.5 8.5" stroke="#7E869E" stroke-opacity="0.25" />
-                <path
-                  d="M2.5 5.7C2.5 4.57989 2.5 4.01984 2.71799 3.59202C2.90973 3.21569 3.21569 2.90973 3.59202 2.71799C4.01984 2.5 4.5799 2.5 5.7 2.5H18.3C19.4201 2.5 19.9802 2.5 20.408 2.71799C20.7843 2.90973 21.0903 3.21569 21.282 3.59202C21.5 4.01984 21.5 4.5799 21.5 5.7V18.3C21.5 19.4201 21.5 19.9802 21.282 20.408C21.0903 20.7843 20.7843 21.0903 20.408 21.282C19.9802 21.5 19.4201 21.5 18.3 21.5H5.7C4.57989 21.5 4.01984 21.5 3.59202 21.282C3.21569 21.0903 2.90973 20.7843 2.71799 20.408C2.5 19.9802 2.5 19.4201 2.5 18.3V5.7Z"
-                  stroke="#6E970A" stroke-linecap="round" />
-                <path
-                  d="M12.5 15.0294C12.5 17.1878 10.3603 18.704 9.42687 19.2628C9.16233 19.4211 8.83767 19.4211 8.57313 19.2628C7.63974 18.704 5.5 17.1878 5.5 15.0294C5.5 12.9118 7.19587 11.5 9 11.5C10.8667 11.5 12.5 12.9118 12.5 15.0294Z"
-                  stroke="#6E970A" />
-                <circle cx="9" cy="15" r="1" fill="#6E970A" />
-              </svg>
-              <p class="contacts__location-name">Belarus, Minsk</p>
+          <ul class="contacts__list">
+            <li class="contacts__list-item">
+              <a class="contacts__location"
+                href="https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C/@53.8841885,27.263738,10z/data=!3m1!4b1!4m6!3m5!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972!16zL20vMGRseGo?entry=ttu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.5 21.5L12.5 6.5M21.5 4.5L2.5 8.5" stroke="#7E869E" stroke-opacity="0.25" />
+                  <path
+                    d="M2.5 5.7C2.5 4.57989 2.5 4.01984 2.71799 3.59202C2.90973 3.21569 3.21569 2.90973 3.59202 2.71799C4.01984 2.5 4.5799 2.5 5.7 2.5H18.3C19.4201 2.5 19.9802 2.5 20.408 2.71799C20.7843 2.90973 21.0903 3.21569 21.282 3.59202C21.5 4.01984 21.5 4.5799 21.5 5.7V18.3C21.5 19.4201 21.5 19.9802 21.282 20.408C21.0903 20.7843 20.7843 21.0903 20.408 21.282C19.9802 21.5 19.4201 21.5 18.3 21.5H5.7C4.57989 21.5 4.01984 21.5 3.59202 21.282C3.21569 21.0903 2.90973 20.7843 2.71799 20.408C2.5 19.9802 2.5 19.4201 2.5 18.3V5.7Z"
+                    stroke="#6E970A" stroke-linecap="round" />
+                  <path
+                    d="M12.5 15.0294C12.5 17.1878 10.3603 18.704 9.42687 19.2628C9.16233 19.4211 8.83767 19.4211 8.57313 19.2628C7.63974 18.704 5.5 17.1878 5.5 15.0294C5.5 12.9118 7.19587 11.5 9 11.5C10.8667 11.5 12.5 12.9118 12.5 15.0294Z"
+                    stroke="#6E970A" />
+                  <circle cx="9" cy="15" r="1" fill="#6E970A" />
+                </svg>
+                <p class="contacts__location-name">Belarus, Minsk</p>
+              </a>
             </li>
-            <li class="contacts__phone">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z"
-                  stroke="#6E970A" />
-              </svg>
-              <p class="contacts__phone-number">+375 (33) 314-66-65</p>
+            <li class="contacts__list-item">
+              <a class="contacts__phone" href="tel:+375333146665">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z"
+                    stroke="#6E970A" />
+                </svg>
+                <p class="contacts__phone-number">+375 (33) 314-66-65</p>
+              </a>
             </li>
           </ul>
         </div>
@@ -137,7 +163,31 @@
 
       <div class="blocks-container">
         <div class="skills" id="skills">
-          <h2 class="skills__heading">A brunch of skills</h2>
+          <div class="skills__heading-container">
+            <h2 class="skills__heading">A brunch of skills</h2>
+            <svg class="arrow" width="32" height="26" viewBox="0 0 32 26" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M31.4299 12.7684L1.1011 0.447322C0.575043 0.233612 0 0.620686 0 1.1885V24.8115C0 25.3793 0.575045 25.7664 1.1011 25.5527L31.4299 13.2316C31.6377 13.1472 31.6377 12.8528 31.4299 12.7684Z"
+                fill="#6E970A" />
+            </svg>
+          </div>
+          <ul class="tree">
+            <li class="tree__item">HTML, CSS, BEM</li>
+            <li class="tree__item">GIT, GitHub</li>
+            <li class="tree__item">JavaScript, TypeScript</li>
+            <li class="tree__item">Node.JS</li>
+            <li class="tree__item">Python basics, ML</li>
+            <li class="tree__item">Java OOP</li>
+            <li class="tree__item">SQL, relatonal DB</li>
+            <li class="tree__item" id="languages">
+              <span class="tree__span"> Languages </span>
+              <ul class="tree__languages">
+                <li class="tree__item">English (B2)</li>
+                <li class="tree__item">Spanish (B1)</li>
+              </ul>
+            </li>
+          </ul>
           <div class="skills__brunch">
             <svg width="800" height="220">
               <!-- Листья -->
@@ -204,8 +254,8 @@
           </table>
         </div>
 
-        <div class="code">
-          <h2 class="code__heading" id="code">Codewars</h2>
+        <div class="code" id="code">
+          <h2 class="code__heading">Codewars</h2>
           <div class="code__example">
             <p class="code__paragraph">Given a non-negative integer n, write a function to_binary/ToBinary which returns
               that number in a binary
