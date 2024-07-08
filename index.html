@@ -26,6 +26,13 @@
   <div class="wrapper">
     <header>
       <div class="header-container">
+        <div class="burger-btn" id="burger-btn">
+          <svg class="burger-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.33331 11.6666H31.6666" stroke="#2C4001" stroke-width="2" stroke-linecap="round" />
+            <path d="M8.33331 20H31.6666" stroke="#2C4001" stroke-width="2" stroke-linecap="round" />
+            <path d="M8.33331 28.3334H31.6666" stroke="#2C4001" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
         <nav class="menu">
           <ul class="menu-list">
             <li class="menu-list__item"><a href="#about" class="menu-list__link">About me</a></li>
@@ -38,6 +45,18 @@
         </nav>
       </div>
     </header>
+    <div class="burger-menu-container">
+      <nav class="burger-menu">
+        <ul class="menu-list" id="burger">
+          <li class="menu-list__item"><a href="#about" class="menu-list__link">About me</a></li>
+          <li class="menu-list__item"><a href="#contacts" class="menu-list__link">Contact me</a></li>
+          <li class="menu-list__item"><a href="#skills" class="menu-list__link">My skills</a></li>
+          <li class="menu-list__item"><a href="#code" class="menu-list__link">Code example</a></li>
+          <li class="menu-list__item"><a href="#education" class="menu-list__link">Education</a></li>
+          <li class="menu-list__item"><a href="#projects" class="menu-list__link">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
     <main>
       <div class="about">
         <div class="container-me">
@@ -67,7 +86,8 @@
               course</strong>, which
             inspired me to pursue a career in frontend development.
             <br>
-            <br>
+          </p>
+          <p class="summary__paragraph" id="second-paragraph">
             In the RSS course, I plan to deepen my knowledge of frontend development and study modern technologies and
             practices. My short-term goal is to obtain a position as a frontend developer in an innovative company where
             I can apply and expand my knowledge. In the long term, I aspire to become a versatile developer capable of
