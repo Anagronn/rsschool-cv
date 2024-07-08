@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initializeModal();
   initializeTreeList();
   initializePageLoadEffects();
+  initializeBurgerMenu();
 });
 
 function initializeIconAnimation() {
@@ -73,6 +74,10 @@ function initializeSlider() {
   window.onload = function () {
     updateSliderPosition();
   };
+
+  window.onresize = function () {
+    updateSliderPosition();
+  };
 }
 
 function initializeModal() {
@@ -112,6 +117,26 @@ function initializeTreeList() {
     treeItemLanguages.classList.toggle('active');
     treeLanguages.classList.toggle('active');
   });
+}
+
+function initializeBurgerMenu() {
+  const burgerBtn = document.querySelector('.burger-btn');
+  const burgerMenuContainer = document.querySelector('.burger-menu-container');
+  const menuLinks = document.querySelectorAll('.menu-list__link');
+  burgerBtn.addEventListener('click', function () {
+    burgerMenuContainer.classList.toggle('active');
+    burgerBtn.classList.toggle('active');
+  });
+
+  menuLinks.forEach( link => {
+    link.addEventListener('click', function(){
+      burgerMenuContainer.classList.remove('active');
+    })
+  })
+
+  window.onresize = function(){
+    burgerMenuContainer.classList.remove('active');
+  }
 }
 
 function initializePageLoadEffects() {
