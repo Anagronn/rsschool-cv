@@ -695,6 +695,10 @@ h3 {
   .burger-icon path{
     transition: stroke 0.5s ease-in-out;
   }
+  
+  .burger-icon:hover path{
+    stroke: white;
+  }
 
   .burger-btn.active > .burger-icon path{
     stroke: white;
