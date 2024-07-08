@@ -133,6 +133,10 @@ function initializeBurgerMenu() {
       burgerMenuContainer.classList.remove('active');
     })
   })
+
+  window.onresize = function(){
+    burgerMenuContainer.classList.remove('active');
+  }
 }
 
 function initializePageLoadEffects() {
