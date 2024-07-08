@@ -130,11 +130,13 @@ function initializeBurgerMenu() {
 
   menuLinks.forEach( link => {
     link.addEventListener('click', function(){
+      burgerBtn.classList.remove('active');
       burgerMenuContainer.classList.remove('active');
     })
   })
 
   window.onresize = function(){
+    burgerBtn.classList.remove('active');
     burgerMenuContainer.classList.remove('active');
   }
 }
